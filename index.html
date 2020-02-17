@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<form method="post" action="/job-application-form">
+        <div class="row"
+          style="border-top: 1px solid #d8e3e7;border-bottom: 1px solid #d8e3e7;padding:5% 0%;;margin-top:1%;">
+          <div class="col-md-3">
+            <p style="font-size:18px;font-weight:700;color:#231f20;">Personal information</p>
+            <p style="font-size:14px;font-weight:400;color:rgb(138, 162, 173);">Tell me something about yourself</p>
+          </div>
+          <div class="col-md-7">
+            <div class="form-group">
+              <label for="Name">Full name <span style="color:red">*</span></label>
+              <input type="text" class="form-control" name="name" placeholder="Your Full Name" required>
+            </div>
+
+            <div class="form-group">
+              <label style="margin-top:10px;" for="Name">Email address <span style="color:red">*</span></label>
+              <input type="email" class="form-control" name="email" placeholder="Your email address" required>
+            </div>
+
+            <div class="form-group">
+              <label style="margin-top:10px;" for="Name">Phone number <span style="color:red">*</span></label>
+              <input type="number" class="form-control" name="phone" placeholder="Your email address" required>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="padding:3px;">
+          <div class="col-md-3">
+            <p style="font-size:18px;font-weight:700;color:#231f20;">Cover letter <span style="color:red">*</span></p>
+            <p style="font-size:14px;font-weight:400;color:rgb(138, 162, 173);">Insert your cover letter here</p>
+          </div>
+          <div class="col-md-7">
+            <div class="form-group">
+              <textarea class="form-control" name="cover_letter" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-7">
+            <button style="margin-top:5%" type="submit" class="btn btn-lg btn-block event-click-button">Submit</button>
+          </div>
+        </div>
+        <div class="row">
+          <div id="inline-badge" style="display:none"></div>
+        </div>
+      </form>
+</body>
+</html>
