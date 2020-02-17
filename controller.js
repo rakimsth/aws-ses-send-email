@@ -1,4 +1,4 @@
-const messenger = require("../messenger");
+const messenger = require("./messenger");
 
 class Controller {
 
