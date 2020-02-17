@@ -15,7 +15,7 @@ handlebars.registerHelper("host_url", () => app_url);
 
 const Templates = {
 //your email templates
-  bloodRequest: {
+  queryEmail: {
     from: "Github <rakimsth@github.com>", //change it
     subject: "Email using SES!", //change it
     html: __dirname + "/../public/templates/email_template.htm" //change it
